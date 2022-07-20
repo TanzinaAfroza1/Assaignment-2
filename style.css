@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    height: 420px;
+    height: 450px;
     width: 75%;
     /* margin-left: 60px; */
     padding-left: 50px;
@@ -34,7 +34,7 @@
 
 }
 .containers img{
-    width: 76%;
+    width: 78%;
     padding-right: 20px;
     padding-bottom: 0;
 }
