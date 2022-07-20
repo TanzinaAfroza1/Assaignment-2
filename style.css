@@ -5,16 +5,24 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+/* Amimaqtion  start*/
+@keyframes slidin{
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: gray;
+    }
+}
 .container{
     height: 420px;
     width: 76%;
-    
     padding-left: 50px;
-    
     border-radius: 15px;
     background-color: black;
     margin: 0 auto;
-    
+    animation: slidin 1s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
     
 }
 .containers{
@@ -40,12 +48,16 @@
     padding-right: 20px;
     padding-bottom: 0;
 }
+
+.watch-live:hover{
+    background-color: brown;
+}
 .watch-live{
     background-color: red;
-    width: 98px;
-    height: 33px;
+     width: 100px; 
+    margin-top: 5px;
+    padding: 10px 12px ;
     border-radius: 3px;
-    padding-top: 3px;
 }
 .watch-live a{
     color: white;
@@ -57,9 +69,8 @@
         upcoming-match-container CSS start
     ----------------------------------*/
 .second{
-    display: flex;
-    /* align-items: center;
-    margin-bottom: 50px; */
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
 .second-container{
     display: grid;
@@ -78,16 +89,14 @@
     
 }
 .match-buttons{
-    width: 400px;
     height: 200px;
-    /* justify-content: center; */
     align-items: center;
     padding: 0px 30px 0px 30px;
+    border-radius: 5px;
     margin-top: 50px;
     margin-right: 20px;
     background-color: black;
     display: grid;
-    /* grid-template-rows:repeat(3,1fr) ; */
    
 }
 .match-buttons a{
@@ -194,9 +203,9 @@ span{
 #icon{
     text-align: center;
 }
-/*------------- End websit 1 ------------------------*/
+/*-------------------------End websit 1 ------------------------*/
 
-
+/*----------------- Webait 2 Start --------------- */
 
 
 
