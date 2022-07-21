@@ -5,65 +5,79 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-/* Amimaqtion  start*/
-@keyframes slidin{
-    from{
-        background-color: black;
-    }
-    to{
-        background-color: gray;
-    }
-}
+
 .container{
-    height: 420px;
-    width: 76%;
-    padding-left: 50px;
-    border-radius: 15px;
-    background-color: black;
-    margin: 0 auto;
-    animation: slidin 3s ease-in-out 0.5s infinite alternate ;
-    animation-play-state: running;
-    
-}
-.containers{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     justify-content: center;
-    margin-top: 30px;
     align-items: center;
+    margin-top: 50px;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    background-color: #161616;
+    height: 470px;
+    width: 90%;
+    margin-left: 70px;
+    border-radius: 15px;
+}
+.section-title h1{
+    width: 485px;
+    font-size: 64px;
     color: white;
-    
+    margin-bottom: 27px;
 }
-.containers h1{
-    font-size: 40px;
-    margin: 0;
-}
-.containers p{
-    font-size: 10px;
-    padding: 0px;
-
-}
-.containers img{
-    width: 78%;
-    padding-right: 20px;
-    padding-bottom: 0;
-}
-
-.watch-live:hover{
-    background-color: brown;
-}
-.watch-live{
-    background-color: red;
-     width: 100px; 
-    margin-top: 5px;
-    padding: 10px 12px ;
-    border-radius: 3px;
-}
-.watch-live a{
+.section-title p{
     color: white;
-    font-size: 14px;
+    margin-bottom: 20px;
+}
+.fa-arrow-right{
+    margin-left: 8px;
+}
+#main-image img{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 80px;
+    animation: animate1 1.01s ease-out infinite alternate;
+}
+@keyframes animate1{
+    from{
+        transform: scale(1.10);
+    }
+}
+.link-button{
     text-decoration: none;
-    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 24px;
+    background-color: #dd0000;
+}
+
+.block {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 30px;
+    gap: 20px;
+    width: 50%;
+    height: 23%;
+    background-color: #161616;
+    margin: 20px 20px;
+    border-radius: 15px;
+}
+
+.block a {
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px 17px;
+    color: #161616;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.red a {
+    background-color: #dd0000;
+    color: #FFFFFF;
 }
 /* -------------------
         upcoming-match-container CSS start
@@ -128,7 +142,8 @@
 
 .blog-info{
     font-size: 12px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -328,6 +343,18 @@ span{
     text-align: center;
     color: black;
 }
+.view-all{
+    display:none ;
+    background-color: #DD0000;
+    border: none;
+    width: 100px;
+    font-size: 16px;
+    height: 30px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-left: 45%;
+    margin-top: 5%;
+}
 /* -------------footer start -----------------*/
 footer{
     background-color: black;
@@ -338,10 +365,10 @@ footer{
 
 .footboll-2 h2{
     padding-top: 30px;
-    color: crimson;
+    color: #DD0000;
     font-size: 40px;
     text-align: center;
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+
 }
 .fa-futbol{
     color: aliceblue;
@@ -357,15 +384,15 @@ hr {
 
 .contact-2 {
     text-align: center;
-    color: gray;
+    color: wheat;
     
 }
 span{
     margin-left: 20px;
 }
 .link-add-2 a{
-    margin-left: 15px;
-    color: crimson;
+    margin-left: 10px;
+    color: white;
 }
 #icon-2{
     text-align: center;
@@ -377,11 +404,24 @@ span{
 
 
 
+/* ----------------Websit 1media screen ---------------*/
 
 
+@media only screen and (max-width:556px){
+    .container{
+        width: 100%;
+    }
+    .containers-top{
+        flex-direction: column;
+        align-items: center;
 
+    }
+    .section-title{
+        width: 100%;
 
-
-
-
+    }
+    .main-image{
+        width: 100%;
+    }
+}
 
